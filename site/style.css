@@ -1,0 +1,142 @@
+/*Set the margin of all the elements to 10px on all sides and the background-color to black.*/
+{
+    margin: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+/*Style the Home section (having the app name & the nav bar)*/
+#home {
+    margin-left: -1cm;
+    margin-right: -1cm;
+    margin-top: -1cm;
+    padding-bottom: 2cm;
+    padding-top: 2cm;
+    background-color: #553592;
+}
+
+/*Style the Header section*/
+header {
+    font-size: 30px;
+    color: #CBC3E3;
+    float: left;
+    padding-left: 2cm;
+}
+
+/*The Navigation Bar Container*/
+.topdiv {
+    float: right;
+    padding-right: 1cm;
+}
+
+/*The Navigation Bar Buttons*/
+.topmenu {
+    color: lightgray;
+    background-color: #871F78;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1mm;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*The Navigation Bar Buttons can have the below on-hover style*/
+.topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: purple;
+    text-decoration: underline;
+}
+
+/* Container for all the three conversion calculator sections   */
+
+#all-conversion-section {
+    display: grid;
+    justify-content: center;
+}
+
+figure {
+    float: left;
+    justify-self: auto;
+    width: 200px;
+}
+
+img {
+    width: 200px;
+}
+
+figcaption {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+button {
+    font-size: 20px;
+    border: transparent;
+    width: fit-content;
+    background-color: rgb(173, 218, 173);
+    border-radius: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* The calculator panel */
+.b {
+    border-top-style: solid;
+    border-top-width: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.temparature {
+    border-top-color: green;
+}
+
+.weight {
+    border-top-color: coral;
+}
+
+.distance {
+    border-top-color: cyan;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/* Floating icon for the home button */
+
+.iconbutton {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: cyan;
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+}
+
+.iconbutton img{
+    width: 30px;
+}
+
+footer {
+    background-color: rgb(240, 234, 245);
+    margin-top: 20px;
+}

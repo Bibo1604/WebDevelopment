@@ -1,0 +1,197 @@
+body {
+	background-color: white;
+	margin: 20px;
+}
+
+h1 {
+	color: blueviolet;
+}
+
+#home {
+	margin-left: -1cm;
+	margin-right: -1cm;
+    margin-top: -1cm;
+    padding-bottom: 2cm;
+    padding-top: 2cm;
+    background-color: blueviolet;
+}
+
+header {
+	font-size: 20px;
+	padding-left: 2cm;
+	padding-bottom: 0cm;
+	color: white;
+}
+
+.topdiv{
+	float: right;
+	padding-right: 1cm;
+}
+
+.topmenu {
+	color: white;
+	padding: 10px;
+	background-color: blueviolet;
+	margin: 10px;
+	font-size: 20px;
+	border-radius: 5mm;
+}
+
+.topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: purple;
+    text-decoration: underline;
+}
+
+#information_section {
+	display: grid;
+	justify-content: center;
+}
+
+/* About Me */
+figure {
+    float: left;
+    justify-self: auto;
+    width: 200px;
+}
+
+/* Skills */
+.all_skills {
+	display: grid;
+  	grid-template-columns: repeat(4, 1fr);
+  	grid-gap: 20px;
+}
+
+.html {
+	width: 140px;
+	padding: 10px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.javascript {
+	width: 140px;
+	padding: 10px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.css {
+	width: 140px;
+	padding: 10px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.python {
+	width: 140px;
+	padding: 10px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.java {
+	width: 140px;
+	padding: 10px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+
+/* Recomnedation */
+
+.all_recomendations {
+	display: grid;
+  	grid-template-columns: auto auto auto;
+  	grid-gap: 20px;
+}
+
+.ra {
+	width: 300px;
+	height: 150px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 3mm;
+}
+
+
+.leave_recomendation1 {
+	width: 700px;
+	height: 30px;
+	margin: 15px;
+	border-radius: 4px;
+	font-size: 16px;
+	justify-content: center;
+	margin-left: 200px;
+	resize: none;
+}
+
+.leave_recomendation2 {
+	width: 700px;
+	height: 200px;
+	margin: 15px;
+	border-radius: 4px;
+	font-size: 16px;
+	justify-content: center;
+	margin-left: 200px;
+	resize: none;
+}
+
+.recomendations_button {
+	margin-left: 510px;
+	border-radius: 4px;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	font-size: 15px;
+}
+
+/* Home Button */
+.iconbutton {
+	width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.iconbutton img{
+    width: 50px;
+}
+
+.popup{
+	width: 400px;
+	border: 2px solid black;
+	border-radius: 5px;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
+	text-align: center;
+	padding: 0 30px 30px;
+	margin-left: 560px;
+	margin-top: -400px;
+	visibility: visible;
+	background-color: lightpink;
+/*	transition: transform 0.4s, top 0.4s;*/
+}
+
+.open-popup {
+	visibility: visible;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+	margin-top: 20px;
+}
+
+.popup button {
+	width: 70px;
+	color: blueviolet;
+	border-color: blueviolet;
+}

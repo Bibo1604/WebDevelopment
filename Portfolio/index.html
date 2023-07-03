@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Page Title -->
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+     
+    <body>
+        <!-- Page body -->
+        <section id="home">
+            <!-- Home Section -->
+            <header>
+                <h1 style="color: white;">Minh Hoang Nguyen</h1>
+                <p> &#128488; hoang@gmail.com</p>
+                <p> &#128222; 123 456-7890</p>
+            </header>
+            <nav>
+                <div class="topdiv">
+                    <!-- Button for redirecting users to the About Me section -->
+                    <a href="#about_me"><button class="topmenu">About Me</button></a>
+                    <!-- Button for redirecting users to the Skills section -->
+                    <a href="#skills"><button class="topmenu">Skills</button></a>
+                    <!-- Button for redirecting users to the Projects section -->
+                    <a href="#projects"><button class="topmenu">Projects</button></a>
+                    <!-- Button for redirecting users to the Recomendations section -->
+                    <a href="#recomendations"><button class="topmenu">Recomendations</button></a>
+                </div>
+            </nav>
+        </section>
+        <div id="information_section">
+            <section id="about_me" class="about_me">
+                <div id="am">
+                    <figure>
+                        <img src="https://easydrawingguides.com/wp-content/uploads/2021/11/Cartoon-Man-step-by-step-drawing-tutorial-step-10.png" width="200px"/>
+                    </figure>
+
+                    <article>
+                        <h2 style="font-size: 30px;">
+                            Hi, I am Minh Hoang Nguyen    
+                        </h2>
+                        <p style="font-size: 20px">I am a graduated student of University of Alberta. I have intered for a web design and an application design company. I am looking for a fulltime job.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="skills" class="skills">
+                <h1 style="font-size: 40px"><b>Skills</b></h1>
+                <div class="all_skills">
+                    <div id="html" class="html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png" width="50px"/>
+                        <h2>HTML</h2>
+                        <p>1 years experience</p>
+                    </div>
+                    <div id="javascript" class="javascript">
+                        <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png" width="90px"/>
+                        <h2>JavaScript</h2>
+                        <p>1 years experience</p>
+                    </div>
+                    <div id="css" class="css">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" width="40px"/>
+                        <h2>CSS</h2>
+                        <p>1 years experience</p>
+                    </div>
+                    <div id="python" class="python">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png" width="70px"/>
+                        <h2>Python</h2>
+                        <p>2 years experience</p>
+                    </div>
+                    <div id="java" class="java">
+                        <img src="https://static.vecteezy.com/system/resources/previews/022/100/686/original/java-logo-transparent-free-png.png" width="70px"/>
+                        <h2>Java</h2>
+                        <p>2 years experience</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="project-card">
+                <h1 style="font-size: 40px"><b>Projects</b></h1>
+                <article id="pa1">
+                    <h2>Data management</h2>
+                    <ul>
+                        <li>Developed a program like a social media such as Facebook, Instagram, etc. using Python and SQLite.</li>
+                        <li>Developed a similar program but instead of using Python and SQLite, we use MongoDB.</li>
+                    </ul>
+                </article>
+                <hr>
+                <article id="pa2">
+                    <h2>Finding QRCode</h2>
+                    <ul>
+                        <li>Using Adroid Studio to write a QRCode Game which is similar to Pokemon Go.</li>
+                        <li>Intead of huting Pokemon, we hunt for QRCode.</li>
+                        <li>All database must be uploaded to the cloud.</li>
+                    </ul>
+                </article>
+                <hr>
+                <article id="pa3">
+                    <h2>Web Developer</h2>
+                    <ul>
+                        <li>Using HTML, CSS, JavaScript to create a website.</li>
+                        <li>Website contains some conditions.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="recomendations" class="recomendations">
+                <h1 style="font-size: 40px"><b>Recommendations</b></h1>
+                <div class="all_recomendations" id="ar">
+                    <article class="ra">
+                        "Hoang is a good student. He got a very high mark. However, sometimes, he has some mistakes, but it is not a big problem."
+                    </article>
+                    <article class="ra">
+                        "Hoang did an exceptional job on recent projects. As I remember, Hoang was a very productive person and is a multi-skilled person with vast knowledge. Hoang is careful, proactive, self motivated and intelligent team player."
+                    </article>
+                    <article class="ra">
+                        "Hoang is one of the best among all people I have ever met and is a loyal colleague, understands complex matters. Hoang is a strong and goal oriented team player; with every problem there was a solution. Highly recommended."
+                    </article>
+                    
+                </div>
+                <div id="leave_recomendation">
+                    <h2 style="font-size: 25px; margin-left: 200px;">Leave a Recomendation</h2>
+                    <input class="leave_recomendation1" type="string" id="name" placeholder="Name (Optional)"> <br/>
+                    <textarea class="leave_recomendation2" type="string" id="message" placeholder="Message"></textarea> <br/>
+                    <button class="recomendations_button" id="submit" onclick="submit()">Submit</button>
+                    <div class="popup" id="popup">
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/441/750/original/tick-vector-icon.jpg" width="30px">
+                        <h3>Thanks for leaving a recommendation!</h3>
+                        <button onclick="closePopup()">OK</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="go-home" class="iconbutton">
+            <a href="#home">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwUKZKPxKsmuQM8GAOsHDm4XpV6Tw1l-FMZsJr-vSdQYCdnxprFe1E_W48SrhdlGjLn9c&usqp=CAU"/>
+            </a>
+        </div>
+    </body>
+</html>
